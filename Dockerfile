@@ -4,11 +4,6 @@ FROM node:16-alpine3.15
 #Set working directory to /app
 WORKDIR /app
 
-
-#Set PATH /app/node_modules/.bin
-ENV PATH /app/node_modules/.bin:$PATH
-
-
 #Copy package.json in the image
 COPY package.json ./
 
