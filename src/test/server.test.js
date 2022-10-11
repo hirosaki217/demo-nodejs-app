@@ -1,19 +1,5 @@
-const app = require('../index'),
-    request = require('supertest');
-
-describe('API Test', () => {
-    afterEach(function (done) {
-        app.close(done);
-    });
-
-    it('Should return string in the GET Call', (done) => {
-        request(app)
-            .get('/')
-            .expect('Content-Type', /text/)
-            .expect(200)
-            .end((error) => {
-                if (error) throw done(error);
-                done();
-            });
+describe('Sample Test', () => {
+    it('should test that true === true', () => {
+        expect(true).toBe(true);
     });
 });
