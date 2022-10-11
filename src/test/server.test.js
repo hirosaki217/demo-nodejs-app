@@ -1,4 +1,4 @@
-const app = require('../server'),
+const app = require('../index'),
     request = require('supertest');
 
 describe('API Test', () => {
